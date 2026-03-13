@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HDSavings - Verified Coupon Codes for Wayfair & Home Depot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* === RESET === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #374151; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3, h4 { margin: 0; line-height: 1.2; }
+p { margin: 0 0 16px; }
+ul { margin: 0; padding: 0; list-style: none; }
+table { border-spacing: 0; }
+figure { margin: 0; }
+
+:root {
+  --green: #22c55e;
+  --green-dark: #16a34a;
+  --green-light: #f0fdf4;
+  --dark: #0f172a;
+  --gray-900: #1e293b;
+  --gray-800: #1e293b;
+  --gray-700: #334155;
+  --gray-600: #475569;
+  --gray-500: #64748b;
+  --gray-400: #94a3b8;
+  --gray-300: #cbd5e1;
+  --gray-200: #e2e8f0;
+  --gray-100: #f1f5f9;
+  --gray-50: #f8fafc;
+  --white: #ffffff;
+  --gold: #f59e0b;
+  --wayfair: #7B2D8E;
+  --wayfair-light: #f5eef7;
+  --hd-orange: #F96302;
+  --hd-light: #fff7f0;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+  --max-w: 1140px;
+}
+
+/* === STICKY ANNOUNCEMENT === */
+.ribbon {
+  background: var(--dark);
+  padding: 10px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.ribbon p {
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+.ribbon strong {
+  color: var(--green);
+  font-weight: 700;
+  background: rgba(34,197,94,0.12);
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+/* === NAV === */
+.nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -0.5px;
+}
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--green);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo span { color: var(--green); }
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-600);
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--dark); }
+.nav-links .nav-cta {
+  background: var(--green);
+  color: var(--white);
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+.nav-links .nav-cta:hover { background: var(--green-dark); }
+
+/* === HERO (compact: cards-first layout) === */
+.hero {
+  padding: 72px 24px 80px;
+  text-align: center;
+  background: linear-gradient(180deg, var(--white) 0%, var(--gray-50) 50%, var(--green-light) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.hero-compact {
+  padding: 40px 24px 36px;
+  background: linear-gradient(180deg, var(--white) 0%, var(--gray-50) 100%);
+}
+.hero-compact::before, .hero-compact::after { display: none; }
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(34,197,94,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(123,45,142,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-inner { position: relative; z-index: 1; max-width: 820px; margin: 0 auto; }
+.hero h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 900;
+  color: var(--dark);
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  line-height: 1.08;
+}
+.hero-compact h1 {
+  font-size: clamp(26px, 4vw, 40px);
+  margin-bottom: 12px;
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--green) 0%, #15803d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-sub {
+  font-size: clamp(16px, 2vw, 19px);
+  color: var(--gray-600);
+  max-width: 600px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+.hero-compact .hero-sub {
+  font-size: clamp(14px, 1.8vw, 17px);
+  margin: 0 auto 20px;
+}
+.hero-trust-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.hero-trust-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-600);
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  padding: 6px 14px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+.hero-trust-pill svg { flex-shrink: 0; }
+.hero-cta {
+  display: inline-block;
+  background: var(--green);
+  color: var(--white);
+  font-size: 17px;
+  font-weight: 700;
+  padding: 16px 44px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 14px rgba(34,197,94,0.35);
+  transition: all 0.2s;
+}
+.hero-cta:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(34,197,94,0.4);
+}
+.hero-micro {
+  font-size: 13px;
+  color: var(--gray-400);
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+/* === TRUST STRIP === */
+.trust-strip {
+  background: var(--white);
+  border-top: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 20px 24px;
+}
+.trust-strip-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.trust-stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.trust-stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.trust-stat-icon.gold { background: #fef3c7; }
+.trust-stat-icon.green-bg { background: var(--green-light); }
+.trust-stat-icon.blue-bg { background: #eff6ff; }
+.trust-stat .stat-num {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1.1;
+}
+.trust-stat .stat-label {
+  font-size: 12px;
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+/* === SECTION SHARED === */
+.section {
+  padding: 80px 24px;
+}
+.section-white { background: var(--white); }
+.section-gray { background: var(--gray-50); }
+.section-green { background: var(--green-light); border-top: 2px solid var(--green); border-bottom: 2px solid var(--green); }
+.section-dark { background: var(--dark); }
+.section-inner { max-width: var(--max-w); margin: 0 auto; }
+.section-header { text-align: center; margin-bottom: 48px; }
+.section-header h2 {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+.section-header p {
+  font-size: 16px;
+  color: var(--gray-500);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* === HOW IT WORKS === */
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; position: relative; }
+.steps::before {
+  content: '';
+  position: absolute;
+  top: 72px;
+  left: 16%;
+  right: 16%;
+  height: 2px;
+  background: var(--gray-200);
+  z-index: 0;
+}
+.step {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px 28px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s;
+}
+.step:hover { box-shadow: var(--shadow-lg); border-color: var(--gray-300); }
+.step-num {
+  width: 36px;
+  height: 36px;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(34,197,94,0.3);
+}
+.step-icon { margin-bottom: 16px; }
+.step h3 { font-size: 17px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.step p { font-size: 14px; color: var(--gray-500); line-height: 1.6; margin-bottom: 0; }
+
+/* === COUPON CARDS === */
+.coupons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.coupon-card {
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.25s;
+}
+.coupon-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+.coupon-card.wayfair:hover { border-color: var(--wayfair); }
+.coupon-card.hd:hover { border-color: var(--hd-orange); }
+
+.card-top {
+  padding: 24px 24px 20px;
+  text-align: center;
+  position: relative;
+}
+.card-top.wayfair-top { background: linear-gradient(135deg, var(--wayfair-light) 0%, var(--white) 100%); }
+.card-top.hd-top { background: linear-gradient(135deg, var(--hd-light) 0%, var(--white) 100%); }
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+.badge-wayfair { background: var(--wayfair); color: var(--white); }
+.badge-hd { background: var(--hd-orange); color: var(--white); }
+
+.card-store {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+.card-store.wayfair-text { color: var(--wayfair); }
+.card-store.hd-text { color: var(--hd-orange); }
+
+.card-discount {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--dark);
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+.card-savings {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 6px;
+  margin-bottom: 0;
+}
+.savings-wayfair { background: var(--wayfair-light); color: var(--wayfair); }
+.savings-hd { background: var(--hd-light); color: var(--hd-orange); }
+
+.card-body {
+  padding: 20px 24px 24px;
+  border-top: 1px solid var(--gray-200);
+}
+.card-features {
+  margin-bottom: 20px;
+}
+.card-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--gray-700);
+  padding: 5px 0;
+}
+.card-features li svg { flex-shrink: 0; margin-top: 2px; }
+.card-price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.card-price {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--dark);
+  letter-spacing: -1px;
+  margin-bottom: 0;
+}
+.card-price-sub {
+  font-size: 12px;
+  color: var(--gray-400);
+  margin-bottom: 0;
+}
+.card-cta {
+  display: block;
+  text-align: center;
+  padding: 14px 24px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--white);
+  transition: all 0.15s;
+  width: 100%;
+}
+.cta-wayfair { background: var(--wayfair); }
+.cta-wayfair:hover { background: #6a2479; }
+.cta-hd { background: var(--hd-orange); }
+.cta-hd:hover { background: #e05a02; }
+
+/* === PAYMENT STRIP === */
+.payment-strip {
+  text-align: center;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.payment-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pay-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 34px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gray-500);
+  letter-spacing: 0.3px;
+}
+.payment-label {
+  font-size: 12px;
+  color: var(--gray-400);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* === ROI TABLE === */
+.roi-table-wrap {
+  max-width: 820px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-md);
+}
+.roi-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.roi-table thead { background: var(--dark); }
+.roi-table th {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 14px 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.roi-table td {
+  padding: 16px 18px;
+  text-align: center;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 15px;
+  color: var(--gray-700);
+}
+.roi-table tbody tr { background: var(--white); transition: background 0.1s; }
+.roi-table tbody tr:hover { background: var(--gray-50); }
+.roi-table .highlight-row { background: var(--green-light) !important; }
+.roi-table .highlight-row td { font-weight: 700; color: var(--dark); }
+.roi-positive { color: var(--green-dark); font-weight: 700; }
+.roi-footnote { text-align: center; font-size: 14px; color: var(--gray-500); margin-top: 20px; margin-bottom: 0; }
+
+/* === GUARANTEE === */
+.guarantees { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; max-width: 940px; margin: 0 auto; }
+.guarantee-card { text-align: center; padding: 28px 20px; }
+.guarantee-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(34,197,94,0.1);
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.guarantee-card h3 { font-size: 17px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.guarantee-card p { font-size: 14px; color: var(--gray-600); line-height: 1.65; margin-bottom: 0; }
+
+/* === TESTIMONIALS === */
+.testimonials { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.testimonial {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial:hover { box-shadow: var(--shadow-md); }
+.t-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.t-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--white);
+  flex-shrink: 0;
+}
+.t-avatar.av-green { background: var(--green); }
+.t-avatar.av-purple { background: var(--wayfair); }
+.t-avatar.av-orange { background: var(--hd-orange); }
+.t-avatar.av-blue { background: #3b82f6; }
+.t-avatar.av-pink { background: #ec4899; }
+.t-avatar.av-teal { background: #14b8a6; }
+.t-info { display: flex; flex-direction: column; }
+.t-name { font-size: 14px; font-weight: 700; color: var(--dark); }
+.t-verified {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--green-dark);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.t-stars { color: var(--gold); font-size: 14px; letter-spacing: 1px; margin-bottom: 10px; }
+.t-text { font-size: 14px; color: var(--gray-600); line-height: 1.7; flex: 1; margin-bottom: 10px; }
+.t-savings {
+  display: inline-block;
+  background: var(--green-light);
+  color: var(--green-dark);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+/* === SEO CONTENT === */
+.seo-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.seo-content h2 { font-size: 28px; font-weight: 800; color: var(--dark); margin-bottom: 16px; letter-spacing: -0.3px; }
+.seo-content h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-top: 36px; margin-bottom: 12px; }
+.seo-content p { font-size: 15px; line-height: 1.85; color: var(--gray-600); }
+.seo-toggle {
+  text-align: center;
+  margin-top: 24px;
+}
+.seo-toggle-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid var(--gray-300);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-600);
+  cursor: pointer;
+  background: var(--white);
+  transition: all 0.15s;
+}
+.seo-toggle-btn:hover { background: var(--gray-50); border-color: var(--gray-400); }
+.seo-expanded { display: none; }
+.seo-expanded.show { display: block; }
+
+/* === FAQ === */
+.faq-list {
+  max-width: 720px;
+  margin: 0 auto;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.faq-item { border-bottom: 1px solid var(--gray-200); }
+.faq-item:last-child { border-bottom: none; }
+.faq-item summary {
+  padding: 20px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dark);
+  cursor: pointer;
+  background: var(--white);
+  transition: background 0.1s;
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--gray-400);
+}
+.faq-item[open] summary::after { content: "\2212"; }
+.faq-item summary:hover { background: var(--gray-50); }
+.faq-item .faq-answer {
+  padding: 0 24px 20px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--gray-600);
+}
+.faq-item .faq-answer a { color: var(--green-dark); text-decoration: underline; }
+
+/* === FINAL CTA === */
+.final-cta { text-align: center; }
+.final-cta h2 { color: var(--white); font-size: clamp(24px, 3vw, 34px); font-weight: 800; margin-bottom: 12px; letter-spacing: -0.3px; }
+.final-cta p { color: var(--gray-400); font-size: 16px; margin-bottom: 28px; }
+.final-cta .hero-cta { font-size: 16px; padding: 14px 36px; }
+
+/* === FOOTER === */
+.footer {
+  background: var(--gray-900);
+  padding: 32px 24px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer p {
+  font-size: 13px;
+  color: var(--gray-500);
+  margin-bottom: 8px;
+}
+.footer a { color: var(--gray-400); text-decoration: underline; }
+
+/* === MOBILE === */
+@media (max-width: 768px) {
+  .nav-links a:not(.nav-cta) { display: none; }
+  .hero { padding: 48px 20px 60px; }
+  .hero-compact { padding: 28px 16px 24px; }
+  .hero h1 { font-size: 28px; }
+  .hero-compact h1 { font-size: 22px; }
+  .hero-trust-row { gap: 6px; }
+  .hero-trust-pill { font-size: 11px; padding: 4px 10px; }
+  .trust-strip-inner { gap: 20px; }
+  .trust-stat .stat-num { font-size: 16px; }
+  .trust-stat .stat-label { font-size: 11px; }
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    padding-bottom: 12px;
+  }
+  .steps::before { display: none; }
+  .steps .step { flex: 0 0 85%; scroll-snap-align: start; min-width: 260px; }
+  .coupons { grid-template-columns: 1fr; gap: 20px; }
+  .guarantees { grid-template-columns: 1fr; gap: 16px; }
+  .testimonials { grid-template-columns: 1fr; gap: 16px; }
+  .section { padding: 52px 20px; }
+  .section-header { margin-bottom: 32px; }
+  .roi-table th, .roi-table td { padding: 10px 8px; font-size: 13px; }
+
+  .mobile-footer-cta {
+    display: block !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-top: 1px solid var(--gray-200);
+    padding: 12px 16px;
+    z-index: 99;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+  }
+  .mobile-footer-cta a {
+    display: block;
+    background: var(--green);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  body { padding-bottom: 68px; }
+}
+@media (min-width: 769px) {
+  .mobile-footer-cta { display: none !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- RIBBON -->
+<div class="ribbon">
+  <p>Use code <strong>SAVE10</strong> at checkout for 10% off any coupon. Limited time.</p>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+    </div>
+    HD<span>Savings</span>
+  </div>
+  <div class="nav-links">
+    <a href="#">How It Works</a>
+    <a href="#">Guarantee</a>
+    <a href="#">FAQ</a>
+    <a href="#coupons" class="nav-cta">Browse Coupons</a>
+  </div>
+</nav>
+
+<!-- HERO (compact: headline + trust inline, cards immediately below) -->
+<section class="hero hero-compact">
+  <div class="hero-inner">
+    <h1>Verified Coupon Codes for <em>Wayfair & Home Depot</em></h1>
+    <p class="hero-sub">Guaranteed to work or your money back. Delivered in 60 seconds.</p>
+    <div class="hero-trust-row">
+      <span class="hero-trust-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 4.96/5 Rating</span>
+      <span class="hero-trust-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/></svg> 10,000+ Customers</span>
+      <span class="hero-trust-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg> Money-Back Guarantee</span>
+      <span class="hero-trust-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> &lt; 60s Delivery</span>
+    </div>
+  </div>
+</section>
+
+<!-- COUPON CARDS (above the fold) -->
+<section id="coupons" class="section section-gray" style="padding-top:48px;">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>Active Coupons</h2>
+      <p>Every code is tested and verified today. Pick your store.</p>
+    </div>
+
+    <div class="coupons">
+      <!-- Wayfair 15% -->
+      <div class="coupon-card wayfair">
+        <div class="card-top wayfair-top">
+          <div class="card-badge badge-wayfair">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Verified Today
+          </div>
+          <div class="card-store wayfair-text">Wayfair</div>
+          <h3 class="card-discount">15% Off Entire Order</h3>
+          <p class="card-savings savings-wayfair">Save up to $375 on a $2,500 order</p>
+        </div>
+        <div class="card-body">
+          <ul class="card-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Works for new AND existing customers</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Instant email delivery</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 7-day money-back guarantee</li>
+          </ul>
+          <div class="card-price-row">
+            <p class="card-price">$39.95</p>
+            <p class="card-price-sub">one-time</p>
+          </div>
+          <a href="#" class="card-cta cta-wayfair">Get Wayfair Coupon</a>
+        </div>
+      </div>
+
+      <!-- Home Depot 10% -->
+      <div class="coupon-card hd">
+        <div class="card-top hd-top">
+          <div class="card-badge badge-hd">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Verified Today
+          </div>
+          <div class="card-store hd-text">Home Depot</div>
+          <h3 class="card-discount">10% Off In-Store</h3>
+          <p class="card-savings savings-hd">Save up to $250 on a $2,500 purchase</p>
+        </div>
+        <div class="card-body">
+          <ul class="card-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Printable for in-store use</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Works on appliances and tools</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 7-day money-back guarantee</li>
+          </ul>
+          <div class="card-price-row">
+            <p class="card-price">$39.95</p>
+            <p class="card-price-sub">one-time</p>
+          </div>
+          <a href="#" class="card-cta cta-hd">Get Home Depot Coupon</a>
+        </div>
+      </div>
+
+      <!-- Home Depot $25 -->
+      <div class="coupon-card hd">
+        <div class="card-top hd-top">
+          <div class="card-badge badge-hd">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Verified Today
+          </div>
+          <div class="card-store hd-text">Home Depot</div>
+          <h3 class="card-discount">$25 Off Orders $200+</h3>
+          <p class="card-savings savings-hd">Flat $25 discount on qualifying orders</p>
+        </div>
+        <div class="card-body">
+          <ul class="card-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Works on orders over $200</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Predictable, flat savings</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 7-day money-back guarantee</li>
+          </ul>
+          <div class="card-price-row">
+            <p class="card-price">$39.95</p>
+            <p class="card-price-sub">one-time</p>
+          </div>
+          <a href="#" class="card-cta cta-hd">Get Home Depot Coupon</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment Strip -->
+    <div class="payment-strip">
+      <div class="payment-icons">
+        <div class="pay-icon">VISA</div>
+        <div class="pay-icon">MC</div>
+        <div class="pay-icon">AMEX</div>
+        <div class="pay-icon">PayPal</div>
+        <div class="pay-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gray-500)" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+      </div>
+      <p class="payment-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Encrypted checkout. PCI-DSS compliant.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS (moved below coupons) -->
+<section class="section section-white">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>How It Works</h2>
+      <p>Three steps. Under 60 seconds. Guaranteed savings.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+        <h3>Choose Your Coupon</h3>
+        <p>Pick the store and discount that matches your purchase.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+        <h3>Secure Checkout</h3>
+        <p>Pay securely with credit card or PayPal. PCI compliant.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <h3>Instant Email Delivery</h3>
+        <p>Your verified code arrives in your inbox within 60 seconds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI TABLE -->
+<section class="section section-white">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>The Math Speaks for Itself</h2>
+      <p>See your net savings with a Wayfair 15% off coupon at $39.95.</p>
+    </div>
+    <div class="roi-table-wrap">
+      <table class="roi-table">
+        <thead>
+          <tr><th>Your Order</th><th>15% Discount</th><th>Coupon Cost</th><th>Net Savings</th><th>ROI</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>$300</td><td>$45.00</td><td>$39.95</td><td class="roi-positive">+$5.05</td><td>1.1x</td></tr>
+          <tr><td>$500</td><td>$75.00</td><td>$39.95</td><td class="roi-positive">+$35.05</td><td>1.9x</td></tr>
+          <tr class="highlight-row"><td>$1,000</td><td>$150.00</td><td>$39.95</td><td class="roi-positive"><strong>+$110.05</strong></td><td><strong>3.8x</strong></td></tr>
+          <tr><td>$1,500</td><td>$225.00</td><td>$39.95</td><td class="roi-positive">+$185.05</td><td>5.6x</td></tr>
+          <tr><td>$2,500</td><td>$375.00</td><td>$39.95</td><td class="roi-positive">+$335.05</td><td>9.4x</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="roi-footnote">Break-even point: $267 order. Average Wayfair furniture order: $800-$1,200.</p>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="section section-green">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>The Ironclad Guarantee</h2>
+      <p>If your coupon code doesn't work, we make it right. No exceptions.</p>
+    </div>
+    <div class="guarantees">
+      <div class="guarantee-card">
+        <div class="guarantee-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </div>
+        <h3>Full Refund</h3>
+        <p>100% money back within 7 days if the code doesn't work. No questions asked.</p>
+      </div>
+      <div class="guarantee-card">
+        <div class="guarantee-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+        </div>
+        <h3>Free Replacement</h3>
+        <p>If your code has any issue, we send a verified replacement immediately at no cost.</p>
+      </div>
+      <div class="guarantee-card">
+        <div class="guarantee-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        </div>
+        <h3>Store Credit</h3>
+        <p>Prefer credit for a future purchase? We'll add it to your account instantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section-white">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>What Our Customers Say</h2>
+      <p>Real savings from verified buyers. 4.96/5 across 10,000+ orders.</p>
+    </div>
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="t-header">
+          <div class="t-avatar av-purple">SM</div>
+          <div class="t-info">
+            <span class="t-name">Sarah M.</span>
+            <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
+          </div>
+        </div>
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-text">"Saved $187 on our new sectional sofa from Wayfair. The code worked instantly. I was skeptical paying for a coupon, but the math made it a no-brainer."</p>
+        <span class="t-savings">Saved $187</span>
+      </div>
+      <div class="testimonial">
+        <div class="t-header">
+          <div class="t-avatar av-orange">JR</div>
+          <div class="t-info">
+            <span class="t-name">James R.</span>
+            <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
+          </div>
+        </div>
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-text">"Used the Home Depot coupon for a kitchen renovation. 10% off on $3,200 in materials saved me $320. Coupon paid for itself 8x over."</p>
+        <span class="t-savings">Saved $320</span>
+      </div>
+      <div class="testimonial">
+        <div class="t-header">
+          <div class="t-avatar av-green">LK</div>
+          <div class="t-info">
+            <span class="t-name">Lisa K.</span>
+            <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
+          </div>
+        </div>
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-text">"I've been a Wayfair customer for years and could never find a working existing-customer coupon. This one actually worked. Saved $112 on a dining table."</p>
+        <span class="t-savings">Saved $112</span>
+      </div>
+      <div class="testimonial">
+        <div class="t-header">
+          <div class="t-avatar av-blue">MT</div>
+          <div class="t-info">
+            <span class="t-name">Michael T.</span>
+            <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
+          </div>
+        </div>
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-text">"Got the code in under a minute. Applied it to my Wayfair cart and the discount showed up immediately. Will definitely use again for our bedroom furniture."</p>
+        <span class="t-savings">Saved $97</span>
+      </div>
+      <div class="testimonial">
+        <div class="t-header">
+          <div class="t-avatar av-pink">DW</div>
+          <div class="t-info">
+            <span class="t-name">David W.</span>
+            <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
+          </div>
+        </div>
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-text">"Bought the Home Depot $25 off coupon for a tool purchase. Worked exactly as described. Simple process, real savings."</p>
+        <span class="t-savings">Saved $25</span>
+      </div>
+      <div class="testimonial">
+        <div class="t-header">
+          <div class="t-avatar av-teal">AP</div>
+          <div class="t-info">
+            <span class="t-name">Amanda P.</span>
+            <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
+          </div>
+        </div>
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-text">"Third time buying from HDSavings. Every single code has worked. Saved over $400 total across three furniture orders. Best kept secret for Wayfair shoppers."</p>
+        <span class="t-savings">Saved $400+ total</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEO CONTENT (collapsible to not kill flow) -->
+<section class="section section-gray">
+  <div class="section-inner seo-content">
+    <h2>Strategic Home Savings: A Smarter Approach to Home Improvement</h2>
+
+    <p>Home improvement projects are expensive. A kitchen renovation averages $15,000 to $30,000. A bathroom remodel runs $10,000 to $15,000. Even smaller projects like replacing flooring or upgrading appliances can hit $2,000 to $5,000. At those price points, every percentage point of savings matters.</p>
+
+    <p>That's where strategic couponing comes in. Unlike the free codes scattered across coupon aggregator sites, which are almost always expired, first-order-only, or limited to specific product categories, verified retailer coupons provide a guaranteed discount on your entire purchase.</p>
+
+    <div id="seo-more" class="seo-expanded">
+      <h3>Why Verified Coupons Outperform Free Alternatives</h3>
+      <p>Free coupon codes found on sites like RetailMeNot, Honey, or random blog posts have a success rate well below 10%. The reason is simple: these codes are scraped, shared widely, and rarely verified after initial posting. Many are tied to first-time customer accounts, specific email campaigns, or promotional periods that ended months ago.</p>
+      <p>Verified coupons from HDSavings are tested daily against live retailer systems. Each code is confirmed working before it reaches your inbox. That's why we offer a money-back guarantee: if the code doesn't apply a discount, you get a full refund. We've served over 10,000 customers with a 4.96 out of 5 star rating because the codes work.</p>
+
+      <h3>The Economics of Paying for a Coupon</h3>
+      <p>Paying $39.95 for a coupon sounds counterintuitive until you run the numbers. A Wayfair 15% off coupon on a $1,000 furniture order saves you $150. Subtract the $39.95 coupon cost and you still pocket $110.05 in net savings. On a $2,500 order, the net savings jump to $335.05, a 9.4x return on your investment.</p>
+      <p>The break-even point is a $267 order. The average Wayfair furniture purchase ranges from $800 to $1,200, so the vast majority of buyers see significant positive ROI.</p>
+
+      <h3>How to Maximize Your Savings</h3>
+      <p>Consolidate purchases. Instead of buying items one at a time, batch your home improvement needs into a single larger order. A $39.95 coupon applied to a $2,000 cart is significantly more valuable than applying it to five separate $400 orders.</p>
+      <p>For Wayfair, our 15% off coupon works for both new and existing customers, which is the key differentiator. Most public Wayfair promo codes only work for first-time buyers. Our verified codes bypass that restriction, making them valuable for repeat customers furnishing multiple rooms.</p>
+      <p>For Home Depot, the 10% off printable coupon works in-store on nearly everything, including major appliances, power tools, and building materials.</p>
+
+      <h3>Our Commitment to Transparency</h3>
+      <p>We publish exact pricing, exact discount percentages, and exact savings calculations because informed buyers are the best customers. If your order is below the break-even point, we'll tell you that upfront. This transparency is why we maintain a 4.96/5 rating across 10,000+ transactions.</p>
+    </div>
+
+    <div class="seo-toggle">
+      <span class="seo-toggle-btn" onclick="var el=document.getElementById('seo-more');el.classList.toggle('show');this.textContent=el.classList.contains('show')?'Show less':'Continue reading'">Continue reading</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-white">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Do these coupons work for existing Wayfair customers?</summary>
+        <div class="faq-answer">Yes. Unlike most free promo codes, our Wayfair 15% off coupon works for both new and existing customers. This is the primary reason customers choose HDSavings.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How quickly will I receive my coupon code?</summary>
+        <div class="faq-answer">Instantly. After checkout, your coupon code is delivered to your email within 60 seconds. Check your spam folder if you don't see it right away.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can I stack this coupon with other Wayfair promotions?</summary>
+        <div class="faq-answer">Our 15% off coupon generally cannot be combined with other percentage-based promo codes, but it can typically be used alongside Wayfair's free shipping offers and credit card cashback promotions. See our <a href="#">coupon stacking guide</a> for details.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What happens if my coupon code doesn't work?</summary>
+        <div class="faq-answer">You're covered by our Ironclad Guarantee. We'll send a verified replacement immediately, issue a full refund, or provide store credit. Your choice.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Why should I pay for a coupon instead of finding a free one?</summary>
+        <div class="faq-answer">Free coupon codes from aggregator sites have a success rate below 10%. Our codes are tested daily and guaranteed to work. On a $1,000 order, our 15% coupon saves you $110.05 net after the $39.95 cost.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Does the Home Depot coupon work on appliances?</summary>
+        <div class="faq-answer">Yes. The Home Depot 10% off printable coupon works on nearly all in-store purchases, including major appliances, power tools, building materials, and home decor.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Is HDSavings legitimate?</summary>
+        <div class="faq-answer">HDSavings has served over 10,000 customers since 2020 with a 4.96/5 star rating. All transactions use encrypted, PCI-compliant checkout. We offer a 7-day money-back guarantee on every purchase.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section section-dark">
+  <div class="section-inner final-cta">
+    <h2>Ready to Save on Your Next Home Purchase?</h2>
+    <p>Browse verified coupons. Pick your store. Save in 60 seconds.</p>
+    <a href="#coupons" class="hero-cta">Browse Active Coupons</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2020-2026 HDSavings. All rights reserved.</p>
+  <p><a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a> &middot; <a href="#">Contact Us</a></p>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobile-footer-cta">
+  <a href="#coupons">View Active Coupons</a>
+</div>
+
+</body>
+</html>
