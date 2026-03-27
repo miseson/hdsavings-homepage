@@ -39,6 +39,8 @@ figure { margin: 0; }
   --wayfair-light: #f5eef7;
   --hd-orange: #F96302;
   --hd-light: #fff7f0;
+  --cb: #2c2c2c;
+  --cb-light: #f5f3f0;
   --radius: 10px;
   --radius-lg: 16px;
   --radius-xl: 20px;
@@ -344,7 +346,7 @@ figure { margin: 0; }
 .step p { font-size: 14px; color: var(--gray-500); line-height: 1.6; margin-bottom: 0; }
 
 /* === COUPON CARDS === */
-.coupons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.coupons { display: grid; grid-template-columns: repeat(2, minmax(320px, 420px)); justify-content: center; gap: 24px; }
 .coupon-card {
   background: var(--white);
   border: 2px solid var(--gray-200);
@@ -461,6 +463,12 @@ figure { margin: 0; }
 .cta-wayfair:hover { background: #6a2479; }
 .cta-hd { background: var(--hd-orange); }
 .cta-hd:hover { background: #e05a02; }
+.card-top.cb-top { background: linear-gradient(135deg, var(--cb-light) 0%, var(--white) 100%); }
+.badge-cb { background: var(--cb); color: var(--white); }
+.card-store.cb-text { color: var(--cb); }
+.savings-cb { background: var(--cb-light); color: var(--cb); }
+.cta-cb { background: var(--cb); }
+.cta-cb:hover { background: #1a1a1a; }
 
 /* === PAYMENT STRIP === */
 .payment-strip {
@@ -790,12 +798,11 @@ figure { margin: 0; }
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "Do these coupons work for existing Wayfair customers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Unlike most free promo codes, our Wayfair 15% off coupon works for both new and existing customers."}},
+      {"@type": "Question", "name": "Do these coupons actually work? Is HDSavings legitimate?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. HDSavings has served over 10,000 customers since 2020 with a 4.96/5 star rating. Our Wayfair coupon works for new and existing customers. Our Crate & Barrel coupon works on nearly all items including sale products. Every code is tested daily with a 7-day money-back guarantee."}},
       {"@type": "Question", "name": "How quickly will I receive my coupon code?", "acceptedAnswer": {"@type": "Answer", "text": "Instantly. After checkout, your coupon code is delivered to your email within 60 seconds."}},
       {"@type": "Question", "name": "What happens if my coupon code doesn't work?", "acceptedAnswer": {"@type": "Answer", "text": "You're covered by our Ironclad Guarantee. We'll send a verified replacement immediately, issue a full refund, or provide store credit."}},
-      {"@type": "Question", "name": "Why should I pay for a coupon instead of finding a free one?", "acceptedAnswer": {"@type": "Answer", "text": "Free coupon codes from aggregator sites have a success rate below 10%. Our codes are tested daily and guaranteed to work."}},
-      {"@type": "Question", "name": "Does the Crate & Barrel coupon work on sale items?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Our Crate & Barrel 15% off coupon works on nearly all items, including sale and clearance products."}},
-      {"@type": "Question", "name": "Is HDSavings legitimate?", "acceptedAnswer": {"@type": "Answer", "text": "HDSavings has served over 10,000 customers since 2020 with a 4.96/5 star rating. All transactions use encrypted, PCI-compliant checkout with a 7-day money-back guarantee."}}
+      {"@type": "Question", "name": "Why should I pay for a coupon instead of finding a free one?", "acceptedAnswer": {"@type": "Answer", "text": "Free coupon codes from aggregator sites have a success rate below 10%. Our codes are tested daily and guaranteed to work. On a $1,000 Wayfair order, our 15% coupon saves you $110.05 net after the $39.95 cost."}},
+      {"@type": "Question", "name": "Can I stack this coupon with other promotions?", "acceptedAnswer": {"@type": "Answer", "text": "Our 15% off coupon generally cannot be combined with other percentage-based promo codes, but works alongside free shipping offers and credit card cashback promotions."}}
     ]
   }
 ]
@@ -835,8 +842,6 @@ figure { margin: 0; }
       <span class="hero-trust-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg> Money-Back Guarantee</span>
       <span class="hero-trust-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> &lt; 60s Delivery</span>
     </div>
-    <p style="color: var(--gray-400); font-size: 13px; margin: 12px 0 0; letter-spacing: 0.3px;">Trusted by 10,000+ shoppers · Over $1.2M saved on home furniture · Since 2020</p>
-    <a href="#faq" style="color: var(--green); font-size: 13px; font-weight: 500; margin-top: 8px; display: inline-block;">Is HDSavings legitimate? See why 10,000+ customers rate us 4.96/5 →</a>
   </div>
 </section>
 
@@ -869,7 +874,7 @@ figure { margin: 0; }
           </ul>
           <div class="card-price-row">
             <p class="card-price">$39.95</p>
-            <p class="card-price-sub">one-time</p>
+            <p class="card-price-sub">one-time purchase</p>
           </div>
           <a href="https://hdsavings.com/checkout/?add-to-cart=3474" class="card-cta cta-wayfair"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:4px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Get My 15% Wayfair Code Now</a>
           <p style="font-size: 12px; color: var(--gray-500); margin: 8px 0 0; text-align: center;">Instant email delivery · 7-day money-back guarantee</p>
@@ -878,15 +883,15 @@ figure { margin: 0; }
       </div>
 
       <!-- Crate & Barrel 15% -->
-      <div class="coupon-card cb" style="border-color: var(--gray-300);">
-        <div class="card-top" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);">
-          <div class="card-badge" style="background: #1a1a1a; color: #fff;">
+      <div class="coupon-card cb">
+        <div class="card-top cb-top">
+          <div class="card-badge badge-cb">
             <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
             <span class="verified-badge">Verified Today</span>
           </div>
-          <div class="card-store" style="color: #ccc;">Crate & Barrel</div>
+          <div class="card-store cb-text">Crate & Barrel</div>
           <h3 class="card-discount">15% Off Entire Order</h3>
-          <p class="card-savings" style="background: rgba(255,255,255,0.15); color: #fff;">In-store and online. Not limited to first-time buyers.</p>
+          <p class="card-savings savings-cb">In-store and online. Not limited to first-time buyers.</p>
         </div>
         <div class="card-body">
           <ul class="card-features">
@@ -896,10 +901,11 @@ figure { margin: 0; }
           </ul>
           <div class="card-price-row">
             <p class="card-price">$59.95</p>
-            <p class="card-price-sub">one-time</p>
+            <p class="card-price-sub">one-time purchase</p>
           </div>
-          <a href="https://hdsavings.com/checkout/?add-to-cart=27546" class="card-cta" style="background: #1a1a1a;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:4px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Get My 15% Crate & Barrel Code Now</a>
+          <a href="https://hdsavings.com/checkout/?add-to-cart=27546" class="card-cta cta-cb"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:4px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Get My 15% Crate & Barrel Code Now</a>
           <p style="font-size: 12px; color: var(--gray-500); margin: 8px 0 0; text-align: center;">Instant email delivery · 7-day money-back guarantee</p>
+          <a href="https://hdsavings.com/product/working-crate-and-barrel-15-off-coupon-instant-delivery/" style="font-size: 12px; color: var(--cb); display: block; text-align: center; margin-top: 6px;">Read verified reviews →</a>
         </div>
       </div>
     </div>
@@ -907,48 +913,15 @@ figure { margin: 0; }
     <!-- Payment Strip -->
     <div class="payment-strip">
       <div class="payment-icons">
-        <div class="pay-icon">VISA</div>
-        <div class="pay-icon">MC</div>
-        <div class="pay-icon">AMEX</div>
-        <div class="pay-icon">PayPal</div>
-        <div class="pay-icon">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gray-500)" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-        </div>
+        <div class="pay-icon"><svg width="40" height="13" viewBox="0 0 750 244" fill="none"><path d="M278 0L217 244h-60L218 0h60zm195 159l31-87 18 87h-49zm67 85h56L545 0h-49c-11 0-20 6-24 16L370 244h63l12-34h77l7 34zm-151-79c0-63-87-66-86-95 0-9 8-18 26-20 9-1 33-2 60 10l11-50C389 6 375 0 356 0c-59 0-101 31-101 76 0 33 30 52 52 63 23 11 31 18 31 28 0 15-18 22-35 22-30 0-46-8-59-14l-10 50c13 6 38 12 64 12 63 0 104-31 104-78M228 0l-97 244H67L19 29C15 13 12 10 1 4L2 0h102c13 0 25 9 28 25l25 134 62-159h63z" fill="#1A1F71"/></svg></div>
+        <div class="pay-icon"><svg width="32" height="20" viewBox="0 0 152 100"><rect width="152" height="100" rx="8" fill="#fff"/><circle cx="58" cy="50" r="32" fill="#EB001B"/><circle cx="94" cy="50" r="32" fill="#F79E1B"/><path d="M76 26a32 32 0 0 0-12 24 32 32 0 0 0 12 24 32 32 0 0 0 12-24 32 32 0 0 0-12-24z" fill="#FF5F00"/></svg></div>
+        <div class="pay-icon"><svg width="32" height="20" viewBox="0 0 48 32"><rect width="48" height="32" rx="4" fill="#016FD0"/><path d="M24 6l-3 7.5h-4L21 6h3zm13 0l-4 7.5h4L33 6zm-20 8h6v2h-6v-2zm7 0h6v2h-6v-2zm7 0h6v2h-6v-2zm-14 4l-4 8h4l4-8h-4zm7 0l-4 8h4l4-8h-4zm7 0l-4 8h4l4-8h-4z" fill="white"/><text x="24" y="20" text-anchor="middle" font-size="8" font-weight="bold" fill="white" font-family="Arial">AMEX</text></svg></div>
+        <div class="pay-icon"><svg width="40" height="12" viewBox="0 0 124 33"><path d="M46 0H34C32 0 30 2 29 4L22 25c0 2 1 3 3 3h6c2 0 3-1 4-3l2-5h7l1 5c0 2 2 3 4 3h5c2 0 3-2 3-4L50 3C50 1 48 0 46 0zm-9 17l3-9 2 9h-5zM20 0H8C6 0 4 2 4 4L0 25c0 2 1 3 3 3h6c2 0 4-2 4-4l4-21C18 1 19 0 20 0z" fill="#003087"/><path d="M110 0H98c-2 0-4 2-5 4l-6 21c0 2 1 3 3 3h6c2 0 4-2 4-4l2-5h7l1 5c0 2 2 3 4 3h5c2 0 3-2 3-4L116 3c0-2-2-3-4-3h-2zm-9 17l3-9 2 9h-5zM84 0H72c-2 0-4 2-4 4l-4 21c0 2 1 3 3 3h7c2 0 3-1 4-3l4-21C83 2 84 0 84 0z" fill="#0070E0"/></svg></div>
       </div>
       <p class="payment-label">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         Encrypted checkout. PCI-DSS compliant.
       </p>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS (moved below coupons) -->
-<section class="section section-white">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2>How HDSavings Verified Coupons Work</h2>
-      <p>Three steps. Under 60 seconds. Guaranteed savings.</p>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
-        <h3>Choose Your Coupon</h3>
-        <p>Pick the store and discount that matches your purchase.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
-        <h3>Secure Checkout</h3>
-        <p>Pay securely with credit card or PayPal. PCI compliant.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-        <h3>Instant Email Delivery</h3>
-        <p>Your verified code arrives in your inbox within 60 seconds.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -975,6 +948,36 @@ figure { margin: 0; }
       </table>
     </div>
     <p class="roi-footnote">Break-even point: $267 order. Average Wayfair furniture order: $800-$1,200.</p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section section-white">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>How HDSavings Verified Coupons Work</h2>
+      <p>Three steps. Under 60 seconds. Guaranteed savings.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+        <h3>Choose Your Coupon</h3>
+        <p>Pick the store and discount that matches your purchase.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+        <h3>Secure Checkout</h3>
+        <p>Pay securely with credit card or PayPal. PCI compliant.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <h3>Instant Email Delivery</h3>
+        <p>Your verified code arrives in your inbox within 60 seconds.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1017,6 +1020,7 @@ figure { margin: 0; }
     <div class="section-header">
       <h2>What Our Customers Say</h2>
       <p>Real savings from verified buyers. 4.96/5 across 10,000+ orders.</p>
+      <a href="https://hdsavings.com/product/online-15-off-wayfair-printable-coupon-promo-code/" style="font-size:13px;color:var(--green-dark);font-weight:500;display:inline-block;margin-top:8px;">See all 380+ reviews on our store →</a>
     </div>
     <div class="testimonials">
       <div class="testimonial">
@@ -1030,6 +1034,7 @@ figure { margin: 0; }
         <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="t-text">"Saved $187 on our new sectional sofa from Wayfair. The code worked instantly. I was skeptical paying for a coupon, but the math made it a no-brainer."</p>
         <span class="t-savings">Saved $187</span>
+        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">March 2026</span>
       </div>
       <div class="testimonial">
         <div class="t-header">
@@ -1042,6 +1047,7 @@ figure { margin: 0; }
         <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="t-text">"Used the Crate & Barrel coupon for new dining room furniture. 15% off on $2,400 saved me $360. Works on sale items too, which I didn't expect."</p>
         <span class="t-savings">Saved $360</span>
+        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">2 weeks ago</span>
       </div>
       <div class="testimonial">
         <div class="t-header">
@@ -1054,6 +1060,7 @@ figure { margin: 0; }
         <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="t-text">"I've been a Wayfair customer for years and could never find a working existing-customer coupon. This one actually worked. Saved $112 on a dining table."</p>
         <span class="t-savings">Saved $112</span>
+        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">February 2026</span>
       </div>
       <div class="testimonial">
         <div class="t-header">
@@ -1066,6 +1073,7 @@ figure { margin: 0; }
         <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="t-text">"Got the code in under a minute. Applied it to my Wayfair cart and the discount showed up immediately. Will definitely use again for our bedroom furniture."</p>
         <span class="t-savings">Saved $97</span>
+        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">1 week ago</span>
       </div>
       <div class="testimonial">
         <div class="t-header">
@@ -1078,6 +1086,7 @@ figure { margin: 0; }
         <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="t-text">"Got the Crate & Barrel code for a living room refresh. Applied it to a mix of regular and sale items. Saved over $200 on one order. Legit service."</p>
         <span class="t-savings">Saved $200+</span>
+        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">March 2026</span>
       </div>
       <div class="testimonial">
         <div class="t-header">
@@ -1090,6 +1099,7 @@ figure { margin: 0; }
         <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="t-text">"Third time buying from HDSavings. Every single code has worked. Saved over $400 total across three furniture orders. Best kept secret for Wayfair shoppers."</p>
         <span class="t-savings">Saved $400+ total</span>
+        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">January 2026</span>
       </div>
     </div>
   </div>
@@ -1136,32 +1146,24 @@ figure { margin: 0; }
     </div>
     <div class="faq-list">
       <details class="faq-item">
-        <summary>Do these coupons work for existing Wayfair customers?</summary>
-        <div class="faq-answer">Yes. Unlike most free promo codes, our Wayfair 15% off coupon works for both new and existing customers. This is the primary reason customers choose HDSavings.</div>
+        <summary>Do these coupons actually work? Is HDSavings legitimate?</summary>
+        <div class="faq-answer">Yes. HDSavings has served over 10,000 customers since 2020 with a 4.96/5 star rating. Our Wayfair coupon works for both new and existing customers. Our Crate & Barrel coupon works on nearly all items, including sale and clearance products, both in-store and online. Every code is tested daily. All transactions use encrypted, PCI-compliant checkout with a 7-day money-back guarantee.</div>
       </details>
       <details class="faq-item">
         <summary>How quickly will I receive my coupon code?</summary>
         <div class="faq-answer">Instantly. After checkout, your coupon code is delivered to your email within 60 seconds. Check your spam folder if you don't see it right away.</div>
       </details>
       <details class="faq-item">
-        <summary>Can I stack this coupon with other Wayfair promotions?</summary>
-        <div class="faq-answer">Our 15% off coupon generally cannot be combined with other percentage-based promo codes, but it can typically be used alongside Wayfair's free shipping offers and credit card cashback promotions. See our <a href="#">coupon stacking guide</a> for details.</div>
-      </details>
-      <details class="faq-item">
         <summary>What happens if my coupon code doesn't work?</summary>
-        <div class="faq-answer">You're covered by our Ironclad Guarantee. We'll send a verified replacement immediately, issue a full refund, or provide store credit. Your choice.</div>
+        <div class="faq-answer">You're covered by our Ironclad Guarantee. We'll send a verified replacement immediately, issue a full refund, or provide store credit. Your choice, no support tickets required.</div>
       </details>
       <details class="faq-item">
         <summary>Why should I pay for a coupon instead of finding a free one?</summary>
-        <div class="faq-answer">Free coupon codes from aggregator sites have a success rate below 10%. Our codes are tested daily and guaranteed to work. On a $1,000 order, our 15% coupon saves you $110.05 net after the $39.95 cost.</div>
+        <div class="faq-answer">Free coupon codes from aggregator sites have a success rate below 10%. Our codes are tested daily and guaranteed to work. On a $1,000 Wayfair order, our 15% coupon saves you $110.05 net after the $39.95 cost.</div>
       </details>
       <details class="faq-item">
-        <summary>Does the Crate & Barrel coupon work on sale items?</summary>
-        <div class="faq-answer">Yes. Our Crate & Barrel 15% off coupon works on nearly all items, including sale and clearance products. It also works for both in-store and online purchases.</div>
-      </details>
-      <details class="faq-item">
-        <summary>Is HDSavings legitimate?</summary>
-        <div class="faq-answer">HDSavings has served over 10,000 customers since 2020 with a 4.96/5 star rating. All transactions use encrypted, PCI-compliant checkout. We offer a 7-day money-back guarantee on every purchase.</div>
+        <summary>Can I stack this coupon with other promotions?</summary>
+        <div class="faq-answer">Our 15% off coupon generally cannot be combined with other percentage-based promo codes, but it can typically be used alongside free shipping offers and credit card cashback promotions.</div>
       </details>
     </div>
   </div>
@@ -1171,8 +1173,8 @@ figure { margin: 0; }
 <section class="section section-dark">
   <div class="section-inner final-cta">
     <h2>Ready to Save on Your Next Home Purchase?</h2>
-    <p>Browse verified coupons. Pick your store. Save in 60 seconds.</p>
-    <a href="#coupons" class="hero-cta">Browse Active Coupons</a>
+    <p>Pick your store. Get your code. Save in 60 seconds.</p>
+    <a href="#coupons" class="hero-cta">Get Your Coupon Code</a>
   </div>
 </section>
 
