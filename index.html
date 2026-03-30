@@ -621,6 +621,15 @@ figure { margin: 0; }
   align-self: flex-start;
   margin-bottom: 0;
 }
+.t-screenshot {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--gray-200);
+  margin-top: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.t-screenshot:hover { transform: scale(1.02); }
 
 /* === SEO CONTENT === */
 .seo-content {
@@ -1015,87 +1024,79 @@ figure { margin: 0; }
   <div class="section-inner">
     <div class="section-header">
       <h2>What Our Customers Say</h2>
-      <p>Real savings from verified buyers. 4.96/5 across 10,000+ orders.</p>
+      <p>Real checkout screenshots from verified buyers. 4.96/5 across 380+ reviews.</p>
       <a href="https://hdsavings.com/product/online-15-off-wayfair-printable-coupon-promo-code/" style="font-size:13px;color:var(--green-dark);font-weight:500;display:inline-block;margin-top:8px;">See all 380+ reviews on our store →</a>
     </div>
-    <div class="testimonials">
+    <div class="testimonials" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
       <div class="testimonial">
         <div class="t-header">
-          <div class="t-avatar av-purple">SM</div>
+          <div class="t-avatar av-purple">T</div>
           <div class="t-info">
-            <span class="t-name">Sarah M.</span>
+            <span class="t-name">Tucker</span>
             <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
           </div>
         </div>
         <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="t-text">"Saved $187 on our new sectional sofa from Wayfair. The code worked instantly. I was skeptical paying for a coupon, but the math made it a no-brainer."</p>
-        <span class="t-savings">Saved $187</span>
+        <p class="t-text">"I was skeptical but man well worth it!!! Saved me over $300!!!!"</p>
+        <img src="https://hdsavings.com/wp-content/uploads/2024/06/Screenshot-2026-03-26-105744.png" alt="Tucker's Wayfair checkout showing $312 promo code savings" class="t-screenshot" loading="lazy">
+        <span class="t-savings">Saved $312</span>
         <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">March 2026</span>
       </div>
       <div class="testimonial">
         <div class="t-header">
-          <div class="t-avatar av-orange">JR</div>
+          <div class="t-avatar av-orange">E</div>
           <div class="t-info">
-            <span class="t-name">James R.</span>
+            <span class="t-name">Elena</span>
             <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
           </div>
         </div>
         <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="t-text">"Used the Crate & Barrel coupon for new dining room furniture. 15% off on $2,400 saved me $360. Works on sale items too, which I didn't expect."</p>
-        <span class="t-savings">Saved $360</span>
-        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">2 weeks ago</span>
+        <p class="t-text">"Quick and easy. The coupon worked exactly as described at checkout."</p>
+        <img src="https://hdsavings.com/wp-content/uploads/2024/06/Screenshot-2026-03-26-at-9.19.16-AM-1024x554.png" alt="Elena's Wayfair checkout with promo code applied" class="t-screenshot" loading="lazy">
+        <span class="t-savings">Verified Purchase</span>
+        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">March 2026</span>
       </div>
       <div class="testimonial">
         <div class="t-header">
-          <div class="t-avatar av-green">LK</div>
+          <div class="t-avatar av-green">R</div>
           <div class="t-info">
-            <span class="t-name">Lisa K.</span>
+            <span class="t-name">Ronald Lamb</span>
             <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
           </div>
         </div>
         <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="t-text">"I've been a Wayfair customer for years and could never find a working existing-customer coupon. This one actually worked. Saved $112 on a dining table."</p>
-        <span class="t-savings">Saved $112</span>
+        <p class="t-text">"I grabbed a 15% off coupon from HDSavings and ended up paying only $39, saving about $370 on my purchase."</p>
+        <img src="https://hdsavings.com/wp-content/uploads/2024/06/Wayfair-com-Online-Home-Store-for-Furniture-Decor-Outdoors-More-Wayfair-03-20-2026_03_10_PM-1024x801.png" alt="Ronald's Wayfair order with 15% promo code saving $370" class="t-screenshot" loading="lazy">
+        <span class="t-savings">Saved $370</span>
+        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">March 2026</span>
+      </div>
+      <div class="testimonial">
+        <div class="t-header">
+          <div class="t-avatar av-blue">N</div>
+          <div class="t-info">
+            <span class="t-name">Nike B</span>
+            <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
+          </div>
+        </div>
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-text">"Huge savings. This coupon helped me save an extra $93 on chairs."</p>
+        <img src="https://hdsavings.com/wp-content/uploads/2024/06/Screenshot-2026-03-25-at-2.00.02-PM.png" alt="Nike B's Wayfair checkout showing $93 promo code discount" class="t-screenshot" loading="lazy">
+        <span class="t-savings">Saved $93</span>
+        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">March 2026</span>
+      </div>
+      <div class="testimonial">
+        <div class="t-header">
+          <div class="t-avatar av-pink">J</div>
+          <div class="t-info">
+            <span class="t-name">Jillian</span>
+            <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
+          </div>
+        </div>
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-text">"Just wanted to share a quick win. The receipt speaks for itself!"</p>
+        <img src="https://hdsavings.com/wp-content/uploads/2024/06/Wayfair-Receipt-1.jpg" alt="Jillian's Wayfair receipt showing coupon discount applied" class="t-screenshot" loading="lazy">
+        <span class="t-savings">Verified Purchase</span>
         <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">February 2026</span>
-      </div>
-      <div class="testimonial">
-        <div class="t-header">
-          <div class="t-avatar av-blue">MT</div>
-          <div class="t-info">
-            <span class="t-name">Michael T.</span>
-            <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
-          </div>
-        </div>
-        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="t-text">"Got the code in under a minute. Applied it to my Wayfair cart and the discount showed up immediately. Will definitely use again for our bedroom furniture."</p>
-        <span class="t-savings">Saved $97</span>
-        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">1 week ago</span>
-      </div>
-      <div class="testimonial">
-        <div class="t-header">
-          <div class="t-avatar av-pink">DW</div>
-          <div class="t-info">
-            <span class="t-name">David W.</span>
-            <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
-          </div>
-        </div>
-        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="t-text">"Got the Crate & Barrel code for a living room refresh. Applied it to a mix of regular and sale items. Saved over $200 on one order. Legit service."</p>
-        <span class="t-savings">Saved $200+</span>
-        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">March 2026</span>
-      </div>
-      <div class="testimonial">
-        <div class="t-header">
-          <div class="t-avatar av-teal">AP</div>
-          <div class="t-info">
-            <span class="t-name">Amanda P.</span>
-            <span class="t-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--green)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Verified Buyer</span>
-          </div>
-        </div>
-        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="t-text">"Third time buying from HDSavings. Every single code has worked. Saved over $400 total across three furniture orders. Best kept secret for Wayfair shoppers."</p>
-        <span class="t-savings">Saved $400+ total</span>
-        <span style="font-size:11px;color:var(--gray-400);margin-top:6px;">January 2026</span>
       </div>
     </div>
   </div>
